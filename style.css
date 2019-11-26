@@ -1,0 +1,70 @@
+.components-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-rows: auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+    );
+}
+
+@media only screen and (min-width: 70em) {
+    .components-grid {
+        grid-template-columns: 3fr 9fr;
+    }
+}
+
+.terminal-prompt::before, .terminal-prompt::after {
+    content: unset !important;
+}
+
+.terminal-prompt a {
+    font-weight: 500 !important;
+}
+
+.divider {
+    margin: -4px 0 !important;
+    margin-bottom: 20px !important;
+}
+
+.section-divider {
+    margin-top: 2.5em;
+}
+
+.heading-section-divider {
+    margin-top: 3.5em;
+}
+
+.small-divider {
+    margin-top: 1.5em;
+}
+
+.extra-info {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.459);
+  cursor: pointer;
+}
+
+.no-demo {
+  cursor: not-allowed;
+}
+
+.text-error {
+  color: var(--error-color);
+}
+
+.footer-text {
+  text-align: center !important;
+}
+
+.class-repo-description {
+    width: 30rem;
+}
