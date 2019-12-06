@@ -205,5 +205,12 @@
                 <h5 class="footer-text">Benny Chen</a> (c) <script>document.write(new Date().getFullYear())</script></h5>
             </section>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let req = new XMLHttpRequest();
+                req.open('POST', 'https://metrics.m1ke.co/ack');
+                req.send();
+            });
+        </script>
     </body>
 </html>
